@@ -291,7 +291,9 @@ class LoadBEVSegmentation:
             layer_names.extend(mappings[name])
         layer_names = list(set(layer_names))
 
-        location = data["location"]
+        print("THIS LINE BREAKS THE CODE")
+        # location = data["location"]
+        location = "singapore-onenorth"
         masks = self.maps[location].get_map_mask(
             patch_box=patch_box,
             patch_angle=patch_angle,
